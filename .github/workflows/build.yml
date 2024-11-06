@@ -45,8 +45,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:latest .
+          docker build -t valery2024/cryptopay-frontend:$GITHUB_SHA .
 
       - name: Push Docker Image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
+          docker push valery2024/cryptopay-frontend:$GITHUB_SHA

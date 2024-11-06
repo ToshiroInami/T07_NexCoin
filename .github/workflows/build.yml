@@ -45,8 +45,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t valery2024/cryptopay-frontend:$GITHUB_SHA .
+          docker build -t toshiro2024/t07_nexcoin:$GITHUB_SHA .
 
       - name: Push Docker Image to Docker Hub
         run: |
-          docker push valery2024/cryptopay-frontend:$GITHUB_SHA
+          docker push toshiro2024/t07_nexcoin:$GITHUB_SHA

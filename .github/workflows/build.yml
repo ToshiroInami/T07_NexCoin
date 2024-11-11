@@ -16,7 +16,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Asegúrate de obtener todo el historial de commits
+          fetch-depth: 0  # Asegúrate de obtener todo el historial de commit
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
